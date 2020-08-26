@@ -7,11 +7,7 @@ final class jsonTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
 
-
-
-        print(JSON([1,2,3]).prettyPrinted())
-
-        XCTAssertEqual(json().text, "Hello, World!")
+        XCTAssertEqual(JSON([1,2,3]).prettyPrinted()!, "[\n  1,\n  2,\n  3\n]")
     }
 
     static var allTests = [

@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"json::jsonPackageTests::ProductTarget" /* jsonPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_31 /* Build configuration list for PBXAggregateTarget "jsonPackageTests" */;
+			buildConfigurationList = OBJ_32 /* Build configuration list for PBXAggregateTarget "jsonPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_34 /* PBXTargetDependency */,
+				OBJ_35 /* PBXTargetDependency */,
 			);
 			name = jsonPackageTests;
 			productName = jsonPackageTests;
@@ -21,35 +21,27 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		19035E9424F6449200E92F9C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19035E9324F6449200E92F9C /* JSON.swift */; };
-		OBJ_22 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* json.swift */; };
-		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_40 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
-		OBJ_41 /* jsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* jsonTests.swift */; };
-		OBJ_43 /* json.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "json::json::Product" /* json.framework */; };
+		OBJ_23 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* json.swift */; };
+		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_41 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XCTestManifests.swift */; };
+		OBJ_42 /* jsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* jsonTests.swift */; };
+		OBJ_44 /* json.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "json::json::Product" /* json.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		19035E9124F6447E00E92F9C /* PBXContainerItemProxy */ = {
+		19035E9924F64AC600E92F9C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "json::json";
 			remoteInfo = json;
 		};
-		19035E9224F6447F00E92F9C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "json::jsonTests";
-			remoteInfo = jsonTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19035E9324F6449200E92F9C /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = ../../../FoundationExt/Sources/FoundationExt/JSON.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* jsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTests.swift; sourceTree = "<group>"; };
+		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		"json::json::Product" /* json.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = json.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,18 +49,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_23 /* Frameworks */ = {
+		OBJ_24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_42 /* Frameworks */ = {
+		OBJ_43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_43 /* json.framework in Frameworks */,
+				OBJ_44 /* json.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +101,7 @@
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_14 /* Products */,
+				OBJ_17 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -124,7 +117,6 @@
 		OBJ_8 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				19035E9324F6449200E92F9C /* JSON.swift */,
 				OBJ_9 /* json.swift */,
 			);
 			name = json;
@@ -136,9 +128,9 @@
 /* Begin PBXNativeTarget section */
 		"json::SwiftPMPackageDescription" /* jsonPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_25 /* Build configuration list for PBXNativeTarget "jsonPackageDescription" */;
+			buildConfigurationList = OBJ_26 /* Build configuration list for PBXNativeTarget "jsonPackageDescription" */;
 			buildPhases = (
-				OBJ_28 /* Sources */,
+				OBJ_29 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -150,10 +142,10 @@
 		};
 		"json::json" /* json */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_18 /* Build configuration list for PBXNativeTarget "json" */;
+			buildConfigurationList = OBJ_19 /* Build configuration list for PBXNativeTarget "json" */;
 			buildPhases = (
-				OBJ_21 /* Sources */,
-				OBJ_23 /* Frameworks */,
+				OBJ_22 /* Sources */,
+				OBJ_24 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,15 +158,15 @@
 		};
 		"json::jsonTests" /* jsonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_36 /* Build configuration list for PBXNativeTarget "jsonTests" */;
+			buildConfigurationList = OBJ_37 /* Build configuration list for PBXNativeTarget "jsonTests" */;
 			buildPhases = (
-				OBJ_39 /* Sources */,
-				OBJ_42 /* Frameworks */,
+				OBJ_40 /* Sources */,
+				OBJ_43 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_44 /* PBXTargetDependency */,
+				OBJ_45 /* PBXTargetDependency */,
 			);
 			name = jsonTests;
 			productName = jsonTests;
@@ -211,49 +203,48 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_21 /* Sources */ = {
+		OBJ_22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_22 /* json.swift in Sources */,
-				19035E9424F6449200E92F9C /* JSON.swift in Sources */,
+				OBJ_23 /* json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_28 /* Sources */ = {
+		OBJ_29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_29 /* Package.swift in Sources */,
+				OBJ_30 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_39 /* Sources */ = {
+		OBJ_40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_40 /* XCTestManifests.swift in Sources */,
-				OBJ_41 /* jsonTests.swift in Sources */,
+				OBJ_41 /* XCTestManifests.swift in Sources */,
+				OBJ_42 /* jsonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_34 /* PBXTargetDependency */ = {
+		OBJ_35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "json::jsonTests" /* jsonTests */;
-			targetProxy = 19035E9224F6447F00E92F9C /* PBXContainerItemProxy */;
+			targetProxy = "json::jsonTests" /* jsonTests */;
 		};
-		OBJ_44 /* PBXTargetDependency */ = {
+		OBJ_45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "json::json" /* json */;
-			targetProxy = 19035E9124F6447E00E92F9C /* PBXContainerItemProxy */;
+			targetProxy = 19035E9924F64AC600E92F9C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_19 /* Debug */ = {
+		OBJ_20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -281,7 +272,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_20 /* Release */ = {
+		OBJ_21 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -309,7 +300,7 @@
 			};
 			name = Release;
 		};
-		OBJ_26 /* Debug */ = {
+		OBJ_27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -318,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_27 /* Release */ = {
+		OBJ_28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -354,19 +345,19 @@
 			};
 			name = Debug;
 		};
-		OBJ_32 /* Debug */ = {
+		OBJ_33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_33 /* Release */ = {
+		OBJ_34 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_37 /* Debug */ = {
+		OBJ_38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -391,7 +382,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_38 /* Release */ = {
+		OBJ_39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -443,11 +434,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_18 /* Build configuration list for PBXNativeTarget "json" */ = {
+		OBJ_19 /* Build configuration list for PBXNativeTarget "json" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_19 /* Debug */,
-				OBJ_20 /* Release */,
+				OBJ_20 /* Debug */,
+				OBJ_21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -461,29 +452,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_25 /* Build configuration list for PBXNativeTarget "jsonPackageDescription" */ = {
+		OBJ_26 /* Build configuration list for PBXNativeTarget "jsonPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_26 /* Debug */,
-				OBJ_27 /* Release */,
+				OBJ_27 /* Debug */,
+				OBJ_28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_31 /* Build configuration list for PBXAggregateTarget "jsonPackageTests" */ = {
+		OBJ_32 /* Build configuration list for PBXAggregateTarget "jsonPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_32 /* Debug */,
-				OBJ_33 /* Release */,
+				OBJ_33 /* Debug */,
+				OBJ_34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_36 /* Build configuration list for PBXNativeTarget "jsonTests" */ = {
+		OBJ_37 /* Build configuration list for PBXNativeTarget "jsonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_37 /* Debug */,
-				OBJ_38 /* Release */,
+				OBJ_38 /* Debug */,
+				OBJ_39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
