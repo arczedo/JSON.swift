@@ -6,13 +6,7 @@
 //
 
 import Foundation
-
-infix operator <-: MultiplicationPrecedence
-fileprivate func <- <T>(left: T, right: (inout T) -> Void) -> T {
-    var x = left
-    right(&x)
-    return x
-}
+import FoundationPlus
 
 
 public let __je: JSONEncoder = {
@@ -231,4 +225,42 @@ public class JSON: NSObject {
         object as? [String: Any]
     }
 
+}
+
+
+public func JSONObjectOrNull(object: Any?, dataFormat: String = "yyyy-MM-dd") -> AnyObject {
+    if let obj = object {
+        switch obj {
+        case let data as NSData:
+            if let string = String(data: data as Data, encoding: .utf8) {
+                return string as AnyObject
+            } else {
+                return data.base64EncodedString(options: NSData.Base64EncodingOptions()) as AnyObject
+            }
+        case let date as NSDate:
+            return NSNumber(floatLiteral: date.timeIntervalSince1970)
+        case let n as NSNumber:
+            return n
+        case let s as NSString:
+            return s
+        case let s as String:
+            return s as AnyObject
+        case let a as [AnyObject?]:
+            var ta = [AnyObject]()
+            for x in a {
+                ta.append(JSONObjectOrNull(object: x))
+            }
+            return ta as AnyObject
+        case let h as [String: Any?]:
+            var td = [String: AnyObject]()
+            for (k, v) in h {
+                td[k] = JSONObjectOrNull(object: v)
+            }
+            return td as AnyObject
+        default:
+            //debugger.po("Invalid JSON object in JSONObjectOrNull(\(obj)), returning null")
+            return NSNull()
+        }
+    }
+    return NSNull()
 }
