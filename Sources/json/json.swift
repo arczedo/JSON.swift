@@ -37,6 +37,11 @@ public class JSON: NSObject {
         super.init()
     }
 
+    public convenience init?(string: String) {
+        guard let data = string.data(using: .utf8) else { return nil }
+        self.init(data:  data)
+    }
+
     public init(_ object: Any) {
         self.object = object
         super.init()
